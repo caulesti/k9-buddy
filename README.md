@@ -11,12 +11,24 @@ Abre una terminal y ejecuta los siguientes comandos para actualizar la lista de 
 sudo apt-get update
 sudo apt-get upgrade
 ```
-2. Instalar Python y Pip: 
+2. Instalar Python y Pip 
 ```
 sudo apt-get install -y python3
 sudo apt-get install -y python3-pip
 ```
-3. Instalar Paquetes Adicionales:
+3. Habilita los servicios I2C y SSH
+Abre el menú de configuración de la Raspberry Pi
+```
+sudo raspi-config
+```
+Navega a Interfacing Options > I2C y selecciona Yes para habilitar el I2C.
+Navega a Interfacing Options > SSH y selecciona Yes para habilitar el SSH.
+Reinicia la Raspberry Pi para aplicar los cambios:
+```
+sudo reboot
+```
+4. Instalar Paquetes Adicionales
+Abra una terminal y ejecute los siguientes comandos
 ```
 # Instalar python-smbus y i2c-tools
 sudo apt-get install -y python3-smbus
