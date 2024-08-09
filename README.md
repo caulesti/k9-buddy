@@ -3,4 +3,5 @@ K9-Buddy es un robot cuadrúpedo de código abierto diseñado para fomentar la e
 <p align="center">
   <img src="images/1.png" alt="K9-Buddy" width="500"/>
 </p>
-# Guia de inicio rapido
+
+## Instrucciones de instalación
