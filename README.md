@@ -6,6 +6,7 @@ K9-Buddy es un robot cuadrúpedo de código abierto diseñado para fomentar la e
 
 ### Configuración del entorno
 1. Actualizar el Sistema
+   
 Abre una terminal y ejecuta los siguientes comandos para actualizar la lista de paquetes y actualizar los paquetes instalados a sus versiones más recientes:
 ```
 sudo apt-get update
@@ -17,6 +18,7 @@ sudo apt-get install -y python3
 sudo apt-get install -y python3-pip
 ```
 3. Habilita los servicios I2C y SSH
+   
 Abre el menú de configuración de la Raspberry Pi
 ```
 sudo raspi-config
@@ -28,6 +30,7 @@ Reinicia la Raspberry Pi para aplicar los cambios:
 sudo reboot
 ```
 4. Instalar Paquetes Adicionales
+   
 Abra una terminal y ejecute los siguientes comandos
 ```
 # Instalar python-smbus y i2c-tools
