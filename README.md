@@ -57,24 +57,3 @@ chmod +x k9-buddy/software/k9_buddy.py
 ```
 python3 k9-buddy/software/k9_buddy.py
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
