@@ -8,6 +8,6 @@ K9-Buddy es un robot cuadrúpedo de código abierto diseñado para fomentar la e
 1. Actualizar el Sistema
 Abre una terminal y ejecuta los siguientes comandos para actualizar la lista de paquetes y actualizar los paquetes instalados a sus versiones más recientes:
 
-sudo apt-get update
+'''sudo apt-get update'''
 
 sudo apt-get upgrade
