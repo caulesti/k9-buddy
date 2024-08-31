@@ -1,59 +1,59 @@
 # K9-Buddy
-K9-Buddy es un robot cuadrúpedo de código abierto diseñado para fomentar la educación en STEAM y proporcionar una base sólida para competir en eventos de robótica. Destacándose por su bajo costo, K9-Buddy es accesible tanto para estudiantes como para entusiastas de la robótica. 
+K9-Buddy is an open-source quadruped robot designed to promote STEAM education and provide a solid foundation for competing in robotics events. Notable for its low cost, K9-Buddy is accessible to both students and robotics enthusiasts.
 <p align="center">
   <img src="images/1.png" alt="K9-Buddy" width="500"/>
 </p>
 
-### Configuración del entorno
-1. Actualizar el Sistema
+### Environment Setup
+1. Update the System
    
-Abre una terminal y ejecuta los siguientes comandos para actualizar la lista de paquetes y actualizar los paquetes instalados a sus versiones más recientes:
+Open a terminal and run the following commands to update the package list and upgrade the installed packages to their latest versions:
 ```
 sudo apt-get update
 sudo apt-get upgrade
 ```
-2. Instalar Python y Pip 
+2. Install Python and Pip 
 ```
 sudo apt-get install -y python3
 sudo apt-get install -y python3-pip
 ```
-3. Habilita los servicios I2C y SSH
+3. Enable I2C and SSH services
    
-Abre el menú de configuración de la Raspberry Pi
+Open the Raspberry Pi configuration menu
 ```
 sudo raspi-config
 ```
-Navega a Interfacing Options > I2C y selecciona Yes para habilitar el I2C.
-Navega a Interfacing Options > SSH y selecciona Yes para habilitar el SSH.
-Reinicia la Raspberry Pi para aplicar los cambios:
+Navigate to Interfacing Options > I2C and select Yes to enable I2C.
+Navigate to Interfacing Options > SSH and select Yes to enable SSH.
+Restart the Raspberry Pi to apply the changes:
 ```
 sudo reboot
 ```
-4. Instalar Paquetes Adicionales
+4. Install Additional Packages
    
-Abra una terminal y ejecute los siguientes comandos
+Open a terminal and run the following commands:
 ```
-# Instalar python-smbus y i2c-tools
+# Install python-smbus and i2c-tools
 sudo apt-get install -y python3-smbus
 sudo apt-get install -y i2c-tools
 
-# Verificar la conexión I2C
+# Verify the I2C connection
 sudo i2cdetect -y 1
 
-# Instalar Adafruit CircuitPython ServoKit
+# Install Adafruit CircuitPython ServoKit
 sudo pip3 install adafruit-circuitpython-servokit
 ```
 
-### Uso
-1. Clonación del Repositorio
+### Usage
+1. Cloning the Repository
 ```
 git clone https://github.com/caulesti/k9-buddy.git
 ```
-2. Otorgar permisos al script
+2. Grant permissions to the script
 ```
 chmod +x k9-buddy/software/k9_buddy.py
 ```
-3. Ejecución
+3. Execution
 ```
 python3 k9-buddy/software/k9_buddy.py
 ```
